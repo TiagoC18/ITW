@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bazar de código</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Tabela de jogos</h1>
+    <table border="1" style="width:800px; height:600px">
+        <tr>
+            <th colspan="3"> Jogo </th>
+            <th> Minutos </th>
+            <th> Golos </th>
+            <th> Expulsões </th>
+        </tr>
+        <tr>
+            <td style="width:85px; text-align: center;">Gondomar</td>
+            <td style="width: 30px; text-align: center;">VS</td>
+            <td style="width: 85px; text-align: center;">CAF</td>
+            <td style="text-align: center">0</td>
+            <td style="text-align: center">0</td>
+            <td style="text-align: center">0</td>
+        </tr>
+        <tr>
+            <td style="width: 85px; text-align: center;">Boavista</td>
+            <td style="width: 30px; text-align: center;">VS</td>
+            <td style="width: 85px; text-align: center; ">CAF</td>
+            <td style="text-align: center">30</td>
+            <td style="text-align: center">0</td>
+            <td style="text-align: center">0</td>
+        </tr>
+        <tr>
+            <td style="width: 85px; text-align: center;">CAF</td>
+            <td style="width: 30px; text-align: center;">VS</td>
+            <td style="width: 85px; text-align: center; ">Régua</td>
+            <td style="text-align: center">70</td>
+            <td style="text-align: center">1</td>
+            <td style="text-align: center">0</td>
+        </tr>
+        <tr>
+            <td style="width: 85px; text-align: center;">Régua</td>
+            <td style="width: 30px; text-align: center;">VS</td>
+            <td style="width: 85px; text-align: center;">CAF</td>
+            <td style="text-align: center">20</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align: center">1</td>
+        </tr>
+    </table>
+
+    <h1>Lista de coisas a levar para Aveiro</h1>
+    <ul>
+        <li>Iogurte comer</li>
+        <li>Chourição(só tenho 1)</li>
+        <li>Amendoins</li>
+        <li>Ice tea</li>
+        <li>Bolachas</li>
+        <li>Pastilhas</li>
+        <li>Meias de fut</li>
+        <li>2 boxers e 1 par de meias</li>
+        <li>Água</li>
+    </ul>
+
+    <h1>Melhores séries de sempre</h1>
+    <ol>
+        <li>Friends</li>
+        <li>B99</li>
+        <li>A Teoria do Big Bang</li>
+        <li>Wandavision</li>
+        <li>Sex Education</li>
+    </ol>
+
+    <h1>Dicionário da Língua Tiaguesa</h1>
+    <dl>
+        <dt>Tiago</dt>
+        <dd>Pessoa linda que vai ter 20 a ITW</dd>
+        <dt>Aveiro</dt>
+        <dd>Viseu com praia</dd>
+    </dl>
+
+    <h1>Formulário</h1>
+    <form name="PersonData" action="http://192.168.160.36/FormEcho.aspx" method="post">
+        <input type="hidden" name="FormName" value="UserForm" />
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            <dl>
+                <dt>Nome:</dt>
+                <dd><input type="text" name="FirstName" placeholder="Nome próprio" /></dd>
+                <dt>Apelido:</dt>
+                <dd><input type="text" name="LastName" placeholder="Apelido" /></dd>
+                <dt>Password:</dt>
+                <dd><input type="password" name="Password" placeholder="Introduza a sua palavra-passe" /></dd>
+                <dt>Curso:</dt>
+                <dd>
+                    <select name="Course">
+                        <option value="1">   </option>
+                        <option value="2">Licenciatura em Engenharia Informática</option>
+                        <option value="3">Licenciatura em Engenharia de Computadores e Informática</option>
+                        <option value="4">Licenciatura em Engenharia Mecâncica</option>
+                        <option value="5">Outro</option>
+
+                    </select>
+                </dd>
+            </dl>
+        </fieldset>
+        <fieldset>
+            <legend>Meio de transporte</legend>
+            <h4>Indique o seu meio de transporte:</h4>
+            <dl>
+                <dt><input type="checkbox" name="Vehichle" value="Bicicleta" />Bicicleta</dt>
+                <dt><input type="checkbox" name="Vehichle" value="Bus" /> Bus</dt>
+                <dt><input type="checkbox" name="Vehichle" value="Carro" /> Carro</dt>
+                <dt><input type="checkbox" name="Vehichle" value="Trotinete" /> Trotinete</dt>
+            </dl>
+        </fieldset>
+        <fieldset>
+            <legend>Clube</legend>
+            <h4>Indique clube que suporta:</h4>
+            <dl>
+                <dt><input type="radio" name="Club" value="Benfica" />Benfica</dt>
+                <dt><input type="radio" name="Club" value="´Porto" />Porto</dt>
+                <dt><input type="radio" name="Club" value="Sporting" />Sporting</dt>
+                <dt><input type="radio" name="Club" value="Outro" />Outro</dt>
+            </dl>
+        </fieldset>
+        <fieldset>
+            <legend>Caixa de comentários</legend>
+            <dl>
+                <dt>Comentários:</dt>
+                <dd><textarea name="Comments" rows="4" cols="80" placeholder="Insira aqui os seus comentários"></textarea></dd>
+                <dt><input type="file" name="photo" /></dt>
+            </dl>
+        </fieldset>
+        <hr />
+        <input type="button" name="Send" value="Enviar" />
+        <input type="button" name="Reset" value="Reset" />
+    </form>
+</body>
+</html>

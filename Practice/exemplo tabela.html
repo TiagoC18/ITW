@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Table and calculator example</title>
+</head>
+<body style="color: blue;">
+    <table border="1" style="border-style: dotted; width: 800px; height:400px; text-align: center;">
+        <caption>Uma legenda qualquer</caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Cristiano</td>
+            <td>Ronaldo</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>Quim</td>
+            <td>Barreiros</td>
+            <td>72</td>
+        </tr>
+        <tr>
+            <td>Chico da</td>
+            <td>Tina</td>
+            <td>69</td>
+        </tr>
+    </table>
+
+
+    <div id="calculadora">
+        <input id="op1">
+        <select id="operador">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input id="op2">
+        <button onclick="calculadora()">Result</button>
+    </div>
+    <script>
+        function calculadora() {
+
+         // aceder aos valores dos elementos do DOM
+         var op1 = document.getElementById("op1").value;
+         var op2 = document.getElementById("op2").value;
+         var op = document.getElementById("operador").value;
+         var result = 0;
+         // verificar qual é a operação a ser realizada,
+         // tendo em conta o valor da variável 'op'
+         switch (op) {
+         case "+":
+         // utilizar a função parseFloat() para converter uma stringnum float
+         result = parseFloat(op1) + parseFloat(op2);
+         break;
+         case "-":
+         result = parseFloat(op1) - parseFloat(op2);
+         break;
+         case "*":
+         result = parseFloat(op1) * parseFloat(op2);
+         break;
+         case "/":
+         if (op2 != 0) {
+         result = parseFloat(op1) / parseFloat(op2);
+         } else {
+         alert("Error: division by 0!");
+         }
+         break;
+         default:
+         alert("Operation not supported!");
+         break;
+         }
+         alert("Result = " + result);
+         return result;
+         }
+        </script>
+
+</body>
+</html>

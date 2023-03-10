@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>o meu site</title>
+    <meta charset="utf-8" />
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+            li:last-child {
+                border-right: none;
+                float: right;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #444;
+                }
+
+                li a.active:hover {
+                    color: #444;
+                }
+
+        .active {
+            background-color: #5CAF50;
+        }
+    </style>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="page01.html">News</a></li>
+            <li><a href="page02.html">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="banner" style="width: 1508px; height: 500px; border-width: 1px; border-style: solid; border-color: black;">
+        <p>banner</p>
+    </div>
+    <div class="content" style="margin-left: 10px; background: #f1abf5; width: 760px; height: 500px; padding: 0px;">
+        <p>content</p>
+    </div>
+
+
+
+</body>
+</html>
