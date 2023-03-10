@@ -1,0 +1,123 @@
+﻿
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 70px 0 70px 0;
+}
+
+td {
+    height: 30px;
+    vertical-align: central;
+}
+
+
+/*Navbar dropdown*/
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+body {
+    animation: fadeIn linear 1s;
+    -webkit-animation: fadeIn linear 0.5s;
+    -moz-animation: fadeIn linear 0.5s;
+    -o-animation: fadeIn linear 0.5s;
+    -ms-animation: fadeIn linear 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+th {
+    vertical-align: central;
+}
+
+tr {
+    border: solid;
+    border-color: black;
+    background-color: lightgray;
+    height: 38px;
+}
+
+p {
+    color: black;
+}
+
+.date {
+    position: center;
+}
+
+body {
+    background-image: url('images/563843.jpg');
+}
+
+a {
+    color: black;
+}
+
+#dropdown {
+    background-color: #28242c;
+}
+
+.dropdown-item {
+    color: white;
+}

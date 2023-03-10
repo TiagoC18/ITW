@@ -1,0 +1,136 @@
+﻿/*Navbar dropdown*/
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+body {
+    animation: fadeIn linear 1s;
+    -webkit-animation: fadeIn linear 0.5s;
+    -moz-animation: fadeIn linear 0.5s;
+    -o-animation: fadeIn linear 0.5s;
+    -ms-animation: fadeIn linear 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.scroll-down {
+    height: 60px;
+    width: 30px;
+    align-content: center;
+    left: 50%;
+    border: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+    .scroll-down::before,
+    .scroll-down::after {
+        content: "";
+        position: absolute;
+        align-content: center;
+        left: 50%;
+        height: 20px;
+        width: 20px;
+        transform: translate(-50%, -100%) rotate(45deg);
+        border: 2px solid black;
+        border-top: transparent;
+        border-left: transparent;
+        animation: scroll-down 1s ease-in-out infinite;
+    }
+
+    .scroll-down::before {
+        top: 30%;
+        animation-delay: 0.3s;
+        /* animation: scroll-down 1s ease-in-out infinite; */
+    }
+
+@keyframes scroll-down {
+    0% {
+        /* top:20%; */
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+#dropdown {
+    background-color: #28242c;
+}
+
+.dropdown-item {
+    color: white;
+

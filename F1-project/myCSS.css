@@ -1,0 +1,262 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 70px 0 70px 0;
+    margin-bottom:70px;
+}
+
+#demo{
+    color:white;
+    text-decoration:underline;
+    text-decoration-color:white;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#textt{
+    text-align:center;
+    color:black;
+}
+
+#image {
+    margin-left: 280px;
+    align-items: center;
+    justify-content: center;
+}
+.scroll-down {
+    height:60px;
+    width: 30px;
+    align-content:center;
+    left: 50%;
+    border:2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+    .scroll-down::before,
+    .scroll-down::after {
+        content: "";
+        position:absolute;
+        align-content:center;
+        left: 50%;
+        height: 20px;
+        width: 20px;
+        transform: translate(-50%, -100%) rotate(45deg);
+        border: 2px solid black;
+        border-top: transparent;
+        border-left: transparent;
+        animation: scroll-down 1s ease-in-out infinite;
+    }
+
+    .scroll-down::before {
+        top: 30%;
+        animation-delay: 0.3s;
+        /* animation: scroll-down 1s ease-in-out infinite; */
+    }
+
+@keyframes scroll-down {
+    0% {
+        /* top:20%; */
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+
+#f1{
+    margin-top:40px;
+}
+
+.center{
+    margin-top:30px;
+}
+
+
+#date{
+    text-align:justify;
+    vertical-align:central;
+}
+
+#redessociais{
+   margin-top:10px;
+}
+
+#dropdown {
+    background-color: #28242c;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+#xd{
+    height:40px;
+
+}
+.card:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+
+}
+
+#card-group{
+    margin-top:50px;
+}
+
+/*Navbar dropdown*/
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+body {
+    animation: fadeIn linear 0.8s;
+    -webkit-animation: fadeIn linear 0.5s;
+    -moz-animation: fadeIn linear 0.5s;
+    -o-animation: fadeIn linear 0.5s;
+    -ms-animation: fadeIn linear 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}       
+        
+        /* button default*/
+/*---------------------------- */
+    .btn-default {
+    color: #333;
+    background-color: #f8f9fa;
+    border-color: #ccc;
+}
+
+    .btn-default:focus {
+        color: #333;
+        background-color: #e6e6e6;
+        border-color: #8c8c8c;
+    }
+
+    .btn-default:active,
+    .btn-default:hover {
+        color: #333;
+        background-color: #e6e6e6;
+        border-color: #adadad;
+    }
+
+
+
+#h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+}
+
+    #h1 span {
+        transition: .5s linear
+    }
+
+
+
+    #h1:hover span:nth-child(2) {
+        margin-left:50px;
+    }
+
+    #h1:hover span {
+        color: black;
+        text-shadow: 0 0 10px black, 0 0 20px black, 0 0 40px black;
+    }
+
+
+tr:hover td{
+    background-color: #333741;
+    color: white;
+}
+
+

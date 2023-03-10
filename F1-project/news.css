@@ -1,0 +1,58 @@
+﻿body {
+    text-align: left;
+    text-align: justify;
+    background-image: url('images/2020-dti-pulse-survey-animation.gif');
+    background-size: auto;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: black;
+}
+
+p, h5 {
+    color: white;
+}
+
+h1 {
+    color: black;
+}
+
+.a {
+    color: white;
+}
+
+#mmm {
+    color: black;
+}
+
+#read{
+    color:white;
+}
+
+
+#dropdown {
+    background-color: #28242c;
+}
+
+.dropdown-item {
+    color: white;
+}
+/*Navbar dropdown*/
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
